@@ -7,6 +7,15 @@ document.getElementById('userInfoForm').addEventListener('submit', function(e) {
     window.location.href = 'survey.html';
 });
 
+// After submitting the MI survey, redirect to personality test
+document.getElementById('surveyForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Perform your existing survey submission logic here...
+
+    // After submission, redirect to personality test
+    window.location.href = 'personality.html';
+});
+
 // Particles.js configuration
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('particles.js loaded - callback');
